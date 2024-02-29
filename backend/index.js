@@ -1,6 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+
+
+
+var profileRouter = require('./routes/profile');
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
