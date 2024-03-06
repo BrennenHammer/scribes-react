@@ -5,7 +5,8 @@ import Signup from './pages/Signup'
 import Profile from './pages/Profile'
 import Postbook from './pages/Postbook'
 import Subscribers from './pages/Subscribers'
-import OtheruserProfile from "./pages/OtheruserProfile";
+import Navbar from './components/Navbar'
+import OtheruserProfile from "./pages/Otheruserprofile";
 function App() {
 
   const getToken = () => {
@@ -37,7 +38,6 @@ function App() {
   </Route>
 
   <Route element={<LoggedIn />}>
-    <Route path="/feed" element={<SkillsFeed />} />
     <Route path='/profile' element={ <Profile /> } />
     <Route path='/postbook' element={ <Postbook /> } />
     <Route path='/subscribers' element={ <Subscribers /> } />
