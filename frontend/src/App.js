@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Profile from './pages/Profile'
 import Postbook from './pages/Postbook'
+import Mainpage from './pages/Mainpage'
 import Subscribers from './pages/Subscribers'
 import Navbar from './components/Navbar'
 import OtheruserProfile from "./pages/Otheruserprofile";
@@ -38,6 +39,7 @@ function App() {
   </Route>
 
   <Route element={<LoggedIn />}>
+    <Route path='/mainpage' element={ <Mainpage />}/>
     <Route path='/profile' element={ <Profile /> } />
     <Route path='/postbook' element={ <Postbook /> } />
     <Route path='/subscribers' element={ <Subscribers /> } />
