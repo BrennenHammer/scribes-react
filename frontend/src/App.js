@@ -39,7 +39,7 @@ function App() {
   </Route>
 
   <Route element={<LoggedIn />}>
-    <Route path='/mainpage' element={ <Mainpage />}/>
+    <Route path='/mainpage' element={ <Mainpage /> } />
     <Route path='/profile' element={ <Profile /> } />
     <Route path='/postbook' element={ <Postbook /> } />
     <Route path='/subscribers' element={ <Subscribers /> } />
