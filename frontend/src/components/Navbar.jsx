@@ -22,7 +22,7 @@ const Navbar = () => {
 
             {getToken() && 
                 <>
-                    <Link to="/feed">feed</Link>
+                    <Link to="/mainpage">Main page</Link>
                     <Link to="/profile">Profile</Link>
                     <button onClick={ logOutUser }>Logout</button>
                     <button onClick={() => setIsAddPostOpen(true)}>Add Book</button>

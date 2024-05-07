@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { get } from "../services/authService";
+
 import axios from "axios";
 import { AuthContext } from "../context/authContext";
 
-function SkillsFeed() {
+function Mainpage() {
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-  
     const { user } = useContext(AuthContext);
   
     useEffect(() => {
-      get("/feed")
+      get("/Mainpage")
         .then((response) => {
           setPosts(response.data);
           setIsLoading(false);
@@ -107,7 +107,6 @@ function SkillsFeed() {
           ))}
         </div>
         <div className="app-name-container">
-          <img src={logo} alt="Skillz Arena Logo" />
           <h1 className="feedpara">Skillz Arena</h1>
         </div>
         <footer>

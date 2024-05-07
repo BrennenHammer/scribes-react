@@ -39,21 +39,19 @@ function App() {
   </Route>
 
   <Route element={<LoggedIn />}>
-    <Route path='/Mainpage' element={ <Mainpage /> } />
+    <Route path='/mainpage' element={ <Mainpage /> } />
     <Route path='/profile' element={ <Profile /> } />
     <Route path='/postbook' element={ <Postbook /> } />
     <Route path='/subscribers' element={ <Subscribers /> } />
     <Route path="/otheruserprofile/:id" element={ <OtheruserProfile /> }/>
 
   </Route>
-
-
 </Routes>
 
 
 
     </div>
-  )
+  );
 }
 
 export default App
