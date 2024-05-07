@@ -37,9 +37,9 @@ const Login = () => {
     };
     
     return (
-      <div className='loginvw'>
-      <> <p className="loginp">Lets get you're talent on display!</p>
-      <div className="Logindiv">
+      <div>
+      <> <p>Scribes. Where legends form! </p>
+      <div>
         <h1>Login</h1>
   
         <form onSubmit={handleLoginSubmit}>
@@ -63,8 +63,8 @@ const Login = () => {
         </form>
         { errorMessage && <p className="error-message">{errorMessage}</p> }
   
+        <Link to="/Mainpage">Log in</Link>
         
-        <Link to="/Feed"> log in..</Link>
 
 
       </div>

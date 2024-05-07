@@ -24,7 +24,7 @@ const Navbar = () => {
                 <>
                     <Link to="/feed">feed</Link>
                     <Link to="/profile">Profile</Link>
-                    <button onClick={logOutUser}>Logout</button>
+                    <button onClick={ logOutUser }>Logout</button>
                     <button onClick={() => setIsAddPostOpen(true)}>Add Book</button>
                     {isAddPostOpen && <Postbook onClose={() => setIsAddPostOpen(false)} />}
                     <p>Scribes 2024 @</p>
